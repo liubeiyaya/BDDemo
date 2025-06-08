@@ -1,11 +1,5 @@
 <template>
   <div class="note-book">
-    <p>分析过程: 上下布局 ,上面展示搜索、 添加， 下面展示表格 <br>
-      添加类别和内容的模糊搜索 <br>
-      表格里面有各项内容以及操作（编辑，查看，删除）<br>
-      编辑，查看打开弹框，显示表单，添加对类别的认证校验， 删除添加二次确认，成功之后给出提示<br>
-      添加表格分页功能<br>
-      数据持久化放到localStorage</p>
     <div class="opation">
       <el-input v-model="searchValue" placeholder="请输入搜索内容" @input="handleSearch"></el-input>
       <el-button type="primary" @click="handleAddEDitBook('add', {})">添加</el-button>
@@ -166,7 +160,6 @@ export default {
 <style scoped lang="less">
 .note-book {
   text-align: left;
-  border-top: 1px solid #000;
   padding: 20px 10px 30px;
 
   .opation {
